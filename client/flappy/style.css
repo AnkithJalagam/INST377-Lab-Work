@@ -9,8 +9,7 @@
     height: 790px;
     position:  absolute;
     background-color: white;
-    z-index: +2;
-}
+    z-index: +2;}
 
 .border-right {
     width: 80px;
@@ -18,8 +17,7 @@
     position: absolute;
     background-color: white;
     z-index: +2;
-    left: 580px;
-}
+    left: 580px;}
 
 .border-top {
     width: 660px;
@@ -27,15 +25,13 @@
     position:  absolute;
     background-color: white;
     z-index: +2;
-    top: -50px;
-}
+    top: -50px;}
 
 .sky {
     background-image: url('Images/fb-game-background.png');
     width: 500px;
     height: 580px;
-    position: absolute;
-}
+    position: absolute;}
 
 .ground {
     background-image: url('Images/bottom-background.png');
@@ -43,8 +39,7 @@
     height: 150px;
     position: absolute;
     top: 580px;
-    z-index: +1;
-}
+    z-index: +1;}
 
 .bird {
     background-image: url('Images/flappy-bird.png');
@@ -52,31 +47,27 @@
     width: 60px;
     height: 45px;
     left: 220px;
-    bottom: 100px;
-}
+    bottom: 100px;}
 
 .obstacle {
     background-image: url('Images/flappybird-pipe.png');
     width: 60px;
     height: 300px;
-    position: absolute;
-}
+    position: absolute;}
 
 .topObstacle {
     background-image: url('Images/flappybird-pipe.png');
     transform: rotate(180deg);
     width: 60px;
     height: 300px;
-    position: absolute;
-}
+    position: absolute;}
 
 @keyframes slideright {
     from {
         background-position: 10000%;
     }
     to {
-        background-position: 0%;
-    }
+        background-position: 0%;}
   }
   
   @-webkit-keyframes slideright {
@@ -84,25 +75,22 @@
         background-position: 10000%;
     }
     to {
-        background-position: 0%;
-    }
+        background-position: 0%;}
   }
 
   .ground-container {
       height: 150px;
       width: 580px;
       left: 80px;
-      position:  absolute;
-  }
+      position:  absolute;}
   
   .ground-moving {
     position: absolute;
     top: 580px;
     height: 150px;
-    background-image: url('bottom-background.png');
+    background-image: url('Images/bottom-background.png');
     background-repeat: repeat-x;
     animation: slideright 100s infinite linear;
     -webkit-animation: slideright 100s infinite linear;
     width: 100%;
-    z-index: +1;
-  }
+    z-index: +1;}

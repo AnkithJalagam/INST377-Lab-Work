@@ -13,21 +13,18 @@ document.addEventListener('DOMContentLoaded' , () => {
     function startGame() {
         birdBottom -= gravity
         bird.style.bottom = birdBottom + 'px'
-        bird.style.left = birdLeft + 'px'
-    }
+        bird.style.left = birdLeft + 'px' }
     let gameTimerId = setInterval(startGame, 20)
 
     function control(e) {
         if (e.keyCode === 32) {
-            jump()
-        }
+            jump() }
     }
 
     function jump() {
         if (birdBottom < 500) birdBottom += 50
         bird.style.bottom = birdBottom + 'px'
-        console.log(birdBottom)
-    }
+        console.log(birdBottom) }
     document.addEventListener('keyup', control)
 
 
@@ -39,8 +36,8 @@ document.addEventListener('DOMContentLoaded' , () => {
         const topObstacle = document.createElement('div')
         if (!isGameOver) {
             obstacle.classList.add('obstacle')
-            topObstacle.classList.add('topObstacle')
-        }
+            topObstacle.classList.add('topObstacle')}
+            
         gameDisplay.appendChild(obstacle)
         gameDisplay.appendChild(topObstacle)
         obstacle.style.left = obstacleLeft + 'px'
