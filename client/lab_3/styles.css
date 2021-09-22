@@ -59,8 +59,7 @@
   
 .photo-grid-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;}
+    justify-content: center;}
   
 .photo-grid {
     width: 900px;
