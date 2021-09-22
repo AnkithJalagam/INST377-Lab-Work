@@ -1,13 +1,8 @@
-body {
-    display: flex;
-}
-
 .game-container {
     width: 500px;
     height: 730px;
     position: absolute;
-    left: 80px;
-}
+    left: 80px;}
 
 .border-left {
     width: 80px;
