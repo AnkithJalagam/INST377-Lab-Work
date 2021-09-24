@@ -11,6 +11,13 @@
     font-weight: bold;
   }
   
+  .menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   .menu-container {
     color: #fff;
     background-color: #5995da;  /* Blue */
@@ -20,21 +27,13 @@
     align-items: center;
   }
   
-  .menu {
-    border: 1px solid #fff;  /* For debugging */
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .menu .signup {
+    border-left: 1px solid #fff;
+    padding-left: 10px;
   }
   
   .menu .date {
     margin-right: auto;
-  }
-  
-  .menu .signup {
-    border-left: 1px solid #fff;
-    padding-left: 10px;
   }
   
   .links {

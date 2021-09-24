@@ -7,21 +7,18 @@ document.querySelector("#next-button").onclick = (e) => {
   if (current.nextElementSibling) {
     current.classList.remove("visible");
     current.nextElementSibling.classList.add("visible");
-    current = current.nextElementSibling;
-  } else {
+    current = current.nextElementSibling;} 
+    else {
     current.classList.remove("visible");
     first.classList.add("visible");
-    current = first;
-  }
-};
+    current = first;}};
+
 document.querySelector("#previous-button").onclick = (e) => {
   if (current.previousElementSibling) {
     current.classList.remove("visible");
     current.previousElementSibling.classList.add("visible");
-    current = current.previousElementSibling;
-  } else {
+    current = current.previousElementSibling;} 
+    else {
     current.classList.remove("visible");
     last.classList.add("visible");
-    current = last;
-  }
-};
+    current = last;}};
