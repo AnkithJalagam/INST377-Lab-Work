@@ -148,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(leftTimerId)
       clearInterval(rightTimerId)}
   
-  
     function start() {
       if (!isGameOver) {
         createPlatforms()
