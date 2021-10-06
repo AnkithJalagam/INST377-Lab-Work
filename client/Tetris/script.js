@@ -59,12 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let displayIndex = 0;
   let score = 0;
 
-  /**
-   * Redraw the current tetromino position
-   *
-   * @author Alec M. <https://amattu.com>
-   * @date 2021-10-06T11:11:44-040
-   */
   function draw() {
     // Loop through new position and add class
     current.forEach((i) => {
