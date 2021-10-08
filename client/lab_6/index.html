@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 6 - Typeahead Entries</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="p-3">
+    <div class="notification is-warning">
+      Ankith Jalagam - Lab 6
+    </div>
+    <div class="columns is-centered is-desktop">
+      <div class="column is-3">
+        <form class="box" method="" action="" onsubmit="return false;" id="search-form">
+          <div class="field">
+            <label class="label">Search</label>
+            <div class="control">
+              <input name="search_term" class="input" type="text" id="search-term">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">By</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="search_type" value="zip">
+                Zip Code
+              </label>
+              <label class="radio">
+                <input type="radio" name="search_type" value="name" checked>
+                Restaurant Name
+              </label>
+            </div>
+          </div>
+          <button class="button is-primary">Submit</button>
+      </form>
+      </div>
+      <div class="column is-8">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-3">Restaurant Search Results</h3>
+            <div class="notification is-warning" id="no-results">
+              Enter a search term on the left to find your desired Restaurant.
+            </div>
+            <div class="table-container">
+              <table class="table is-hidden is-fullwidth" id="result-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>City</th>
+                      <th>State</th>
+                      <th>Zip</th>
+                      <th>Business Category</th>
+                    </tr>
+                  </thead>
+                  <tbody id="result-table-results"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
